@@ -22,7 +22,7 @@ const CollectionPage = () => {
                 }} className='active:scale-95 cursor-pointer transition bg-red-600 px-8 py-2 rounded text-lg font-medium'>Clear Collection</button>
             </div> : <h2 className='text-5xl font-medium text-center py-10 text-gray-300'>Collection is Empty</h2>}
 
-            <div className='flex flex-wrap justify-start gap-6'>
+            <div className='grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-1 gap-6'>
                 {collection.map((item, idx) => {
                     return <div key={idx}>
                         <CollectionCard item={item} />
